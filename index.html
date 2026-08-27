@@ -1,18 +1,520 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website">
+    <title>Ke-Wei Lin | Portfolio</title>
 
-    <title>Hello World</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <div class="site-shell">
 
-    <h1>Hello World</h1>
+        <!-- =========================
+             LEFT PROFILE SIDEBAR
+        ========================== -->
+        <aside class="profile-sidebar">
+            <div class="profile-card">
+                <div class="profile-photo placeholder-block" aria-label="Profile photo placeholder">
+                    <span>Profile Photo</span>
+                </div>
 
-    <script src="script.js"></script>
+                <div class="profile-heading">
+                    <h1>Ke-Wei Lin</h1>
+                    <p class="profile-title">M.S. Student</p>
+                </div>
+
+                <div class="profile-divider"></div>
+
+                <div class="contact-block">
+                    <p class="meta-label">EMAIL</p>
+                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </div>
+
+                <div class="profile-divider"></div>
+
+                <div class="social-links" aria-label="Social links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Threads">TH</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- =========================
+             RIGHT MAIN PANEL
+        ========================== -->
+        <main class="main-panel">
+
+            <!-- Top-right horizontal tabs -->
+            <nav class="main-nav" aria-label="Primary navigation">
+                <button class="nav-tab active" data-target="about">About Me</button>
+                <button class="nav-tab" data-target="resume">Resume</button>
+                <button class="nav-tab" data-target="projects">Projects</button>
+                <button class="nav-tab" data-target="interests">Interests</button>
+            </nav>
+
+            <div class="content-area">
+
+                <!-- =========================
+                     ABOUT ME
+                ========================== -->
+                <section id="about" class="page-section active">
+                    <header class="section-header">
+                        <h2>About Me</h2>
+                        <div class="section-accent"></div>
+                    </header>
+
+                    <div class="about-copy">
+                        <p>
+                            Hi, I'm Ke-Wei Lin. This paragraph is reserved for a short introduction
+                            about who I am, where I come from, what I am currently doing, and the
+                            fields I am most interested in.
+                        </p>
+
+                        <p>
+                            This paragraph can describe my personality, working style, and the kinds
+                            of problems or projects I enjoy. It can also briefly mention my interests
+                            outside of computer science.
+                        </p>
+                    </div>
+
+                    <section class="content-section">
+                        <h3>Expertise</h3>
+
+                        <div class="expertise-grid">
+                            <article class="info-card">
+                                <h4>Game Development</h4>
+                                <p>Unity / C# / Gameplay Systems</p>
+                            </article>
+
+                            <article class="info-card">
+                                <h4>Computer Graphics</h4>
+                                <p>C++ / OpenGL / GLSL / Real-Time Rendering</p>
+                            </article>
+
+                            <article class="info-card">
+                                <h4>Software Development</h4>
+                                <p>C++ / C# / Python / Git / CMake</p>
+                            </article>
+
+                            <article class="info-card">
+                                <h4>Photography</h4>
+                                <p>Portrait / Event / Post-production</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="content-section">
+                        <h3>Languages</h3>
+
+                        <div class="language-list">
+                            <div class="language-row">
+                                <span>Mandarin</span>
+                                <strong>Native</strong>
+                            </div>
+                            <div class="language-row">
+                                <span>English</span>
+                                <strong>Level / Certification</strong>
+                            </div>
+                            <div class="language-row">
+                                <span>Japanese</span>
+                                <strong>Level / Certification</strong>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content-section">
+                        <h3>Interests</h3>
+                        <p class="muted">
+                            Photography, video games, music, anime, and other interests can be
+                            summarized here.
+                        </p>
+                        <button class="text-link" data-jump="interests">Explore My Interests →</button>
+                    </section>
+                </section>
+
+                <!-- =========================
+                     RESUME
+                ========================== -->
+                <section id="resume" class="page-section">
+                    <header class="section-header">
+                        <h2>Resume</h2>
+                        <div class="section-accent"></div>
+                    </header>
+
+                    <section class="timeline-section">
+                        <div class="subsection-title">
+                            <div class="section-icon">ED</div>
+                            <h3>Education</h3>
+                        </div>
+
+                        <div class="timeline">
+                            <article class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="timeline-content">
+                                    <h4>Graduate School / Institute Name</h4>
+                                    <p class="timeline-date">20XX — Present</p>
+                                    <p>Degree, laboratory, advisor, or other relevant information.</p>
+                                </div>
+                            </article>
+
+                            <article class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="timeline-content">
+                                    <h4>University Name</h4>
+                                    <p class="timeline-date">20XX — 20XX</p>
+                                    <p>Degree, department, academic performance, or other information.</p>
+                                </div>
+                            </article>
+
+                            <article class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="timeline-content">
+                                    <h4>High School Name</h4>
+                                    <p class="timeline-date">20XX — 20XX</p>
+                                    <p>Program or other relevant information.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="timeline-section">
+                        <div class="subsection-title">
+                            <div class="section-icon">EX</div>
+                            <h3>Experience</h3>
+                        </div>
+
+                        <div class="timeline">
+                            <article class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="timeline-content">
+                                    <h4>Experience / Position</h4>
+                                    <p class="timeline-date">20XX — 20XX</p>
+                                    <p>Organization, role, and a concise description of the experience.</p>
+                                </div>
+                            </article>
+
+                            <article class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="timeline-content">
+                                    <h4>Experience / Position</h4>
+                                    <p class="timeline-date">20XX — 20XX</p>
+                                    <p>Organization, role, and a concise description of the experience.</p>
+                                </div>
+                            </article>
+
+                            <article class="timeline-item">
+                                <span class="timeline-dot"></span>
+                                <div class="timeline-content">
+                                    <h4>Experience / Position</h4>
+                                    <p class="timeline-date">20XX — 20XX</p>
+                                    <p>Organization, role, and a concise description of the experience.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- =========================
+                     PROJECTS
+                ========================== -->
+                <section id="projects" class="page-section">
+                    <header class="section-header">
+                        <h2>Projects</h2>
+                        <div class="section-accent"></div>
+                    </header>
+
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <div class="project-cover placeholder-block">
+                                <span>Project Cover</span>
+                            </div>
+
+                            <div class="project-body">
+                                <h3>Project Name 01</h3>
+                                <p>
+                                    A short description of the project, its goal, and the part that
+                                    makes it worth showing.
+                                </p>
+                                <p class="tech-stack">Technology / Technology / Technology</p>
+
+                                <div class="project-actions">
+                                    <a class="button-link disabled-link" href="#" aria-disabled="true">
+                                        Presentation
+                                    </a>
+                                    <a class="button-link secondary disabled-link" href="#" aria-disabled="true">
+                                        Play Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-cover placeholder-block">
+                                <span>Project Cover</span>
+                            </div>
+
+                            <div class="project-body">
+                                <h3>Project Name 02</h3>
+                                <p>
+                                    A short description of the project, its goal, and the part that
+                                    makes it worth showing.
+                                </p>
+                                <p class="tech-stack">Technology / Technology / Technology</p>
+
+                                <div class="project-actions">
+                                    <a class="button-link disabled-link" href="#" aria-disabled="true">
+                                        Presentation
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-cover placeholder-block">
+                                <span>Project Cover</span>
+                            </div>
+
+                            <div class="project-body">
+                                <h3>Project Name 03</h3>
+                                <p>
+                                    A short description of the project, its goal, and the part that
+                                    makes it worth showing.
+                                </p>
+                                <p class="tech-stack">Technology / Technology / Technology</p>
+
+                                <div class="project-actions">
+                                    <a class="button-link disabled-link" href="#" aria-disabled="true">
+                                        Presentation
+                                    </a>
+                                    <a class="button-link secondary disabled-link" href="#" aria-disabled="true">
+                                        Play Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-cover placeholder-block">
+                                <span>Project Cover</span>
+                            </div>
+
+                            <div class="project-body">
+                                <h3>Project Name 04</h3>
+                                <p>
+                                    A short description of the project, its goal, and the part that
+                                    makes it worth showing.
+                                </p>
+                                <p class="tech-stack">Technology / Technology / Technology</p>
+
+                                <div class="project-actions">
+                                    <a class="button-link disabled-link" href="#" aria-disabled="true">
+                                        Presentation
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- =========================
+                     INTERESTS
+                ========================== -->
+                <section id="interests" class="page-section">
+                    <header class="section-header">
+                        <h2>Interests</h2>
+                        <div class="section-accent"></div>
+                    </header>
+
+                    <nav class="interest-nav" aria-label="Interest categories">
+                        <button class="interest-tab active" data-interest="games">Games</button>
+                        <button class="interest-tab" data-interest="music">Music</button>
+                        <button class="interest-tab" data-interest="anime">Anime</button>
+                    </nav>
+
+                    <!-- Games -->
+                    <div id="games" class="interest-section active">
+                        <section class="content-section">
+                            <h3>PC</h3>
+                            <div class="poster-grid game-grid">
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="content-section">
+                            <h3>PlayStation 4</h3>
+                            <div class="poster-grid game-grid">
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="content-section">
+                            <h3>Nintendo Switch</h3>
+                            <div class="poster-grid game-grid">
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                                <article class="poster-item">
+                                    <div class="game-cover placeholder-block">Game Cover</div>
+                                    <h4>Game Title</h4>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Music -->
+                    <div id="music" class="interest-section">
+                        <section class="content-section">
+                            <h3>Favorite Singers &amp; Songs</h3>
+
+                            <div class="artist-list">
+                                <article class="artist-row">
+                                    <div class="artist-photo placeholder-block">
+                                        <span>Artist Photo</span>
+                                    </div>
+
+                                    <div class="artist-content">
+                                        <h4>Artist Name</h4>
+                                        <p class="meta-label">Favorite Songs</p>
+
+                                        <ul class="song-list">
+                                            <li>Song Title 01</li>
+                                            <li>Song Title 02</li>
+                                            <li>Song Title 03</li>
+                                            <li>Song Title 04</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <article class="artist-row">
+                                    <div class="artist-photo placeholder-block">
+                                        <span>Artist Photo</span>
+                                    </div>
+
+                                    <div class="artist-content">
+                                        <h4>Artist Name</h4>
+                                        <p class="meta-label">Favorite Songs</p>
+
+                                        <ul class="song-list">
+                                            <li>Song Title 01</li>
+                                            <li>Song Title 02</li>
+                                            <li>Song Title 03</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="timeline-section">
+                            <div class="subsection-title">
+                                <div class="section-icon">♪</div>
+                                <h3>Concerts</h3>
+                            </div>
+
+                            <div class="timeline">
+                                <article class="timeline-item">
+                                    <span class="timeline-dot"></span>
+                                    <div class="timeline-content">
+                                        <h4>Artist Name — Concert / Tour Name</h4>
+                                        <p class="timeline-date">Month 20XX</p>
+                                        <p>City, Country / Venue</p>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <span class="timeline-dot"></span>
+                                    <div class="timeline-content">
+                                        <h4>Artist Name — Concert / Tour Name</h4>
+                                        <p class="timeline-date">Month 20XX</p>
+                                        <p>City, Country / Venue</p>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <span class="timeline-dot"></span>
+                                    <div class="timeline-content">
+                                        <h4>Artist Name — Concert / Tour Name</h4>
+                                        <p class="timeline-date">Month 20XX</p>
+                                        <p>City, Country / Venue</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Anime -->
+                    <div id="anime" class="interest-section">
+                        <div class="poster-grid anime-grid">
+                            <a class="poster-item anime-item" href="#" aria-disabled="true">
+                                <div class="anime-poster placeholder-block">Anime Poster</div>
+                                <h4>Anime Title</h4>
+                            </a>
+
+                            <a class="poster-item anime-item" href="#" aria-disabled="true">
+                                <div class="anime-poster placeholder-block">Anime Poster</div>
+                                <h4>Anime Title</h4>
+                            </a>
+
+                            <a class="poster-item anime-item" href="#" aria-disabled="true">
+                                <div class="anime-poster placeholder-block">Anime Poster</div>
+                                <h4>Anime Title</h4>
+                            </a>
+
+                            <a class="poster-item anime-item" href="#" aria-disabled="true">
+                                <div class="anime-poster placeholder-block">Anime Poster</div>
+                                <h4>Anime Title</h4>
+                            </a>
+
+                            <a class="poster-item anime-item" href="#" aria-disabled="true">
+                                <div class="anime-poster placeholder-block">Anime Poster</div>
+                                <h4>Anime Title</h4>
+                            </a>
+
+                            <a class="poster-item anime-item" href="#" aria-disabled="true">
+                                <div class="anime-poster placeholder-block">Anime Poster</div>
+                                <h4>Anime Title</h4>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
